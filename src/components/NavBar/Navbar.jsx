@@ -10,6 +10,7 @@ import {
   InputBase,
   Divider,
   List,
+  Badge,
 } from '@mui/material';
 import { MenuRounded, Search, MicRounded } from '@mui/icons-material';
 import theme from '../../theme';
@@ -33,20 +34,22 @@ export const Navbar = (props) => {
           <IconButton size='medium' onClick={toggleDrawer}>
             <MenuRounded color='action' sx={{ fontSize: '24px' }} />
           </IconButton>
-          <CusToolTip title='YouTube Home'>
-            <IconButton disableRipple>
-              <Box
-                component='img'
-                sx={{
-                  width: 120,
-                  objectFit: 'contain',
-                  ml: 1,
-                }}
-                alt='Your logo.'
-                src='src/assets/YouTube-Logo.wine.png'
-              />
-            </IconButton>
-          </CusToolTip>
+          <Badge badgeContent={'Clone'} overlap='circular'>
+            <CusToolTip title='YouTube Home'>
+              <IconButton disableRipple>
+                <Box
+                  component='img'
+                  sx={{
+                    width: 120,
+                    objectFit: 'contain',
+                    ml: 1,
+                  }}
+                  alt='Your logo.'
+                  src='src/assets/YouTube-Logo.wine.png'
+                />
+              </IconButton>
+            </CusToolTip>
+          </Badge>
         </List>
         <Box sx={{ display: 'flex', width: '35%' }}>
           <Paper

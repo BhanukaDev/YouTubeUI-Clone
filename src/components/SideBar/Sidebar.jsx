@@ -2,15 +2,19 @@
 import {
   AccessTimeOutlined,
   BookmarksOutlined,
+  EmojiEventsOutlined,
   ExpandLessOutlined,
   ExpandMoreOutlined,
   HistoryOutlined,
   HomeOutlined,
+  MusicNoteOutlined,
   SmartDisplayOutlined,
   SmartphoneOutlined,
+  SportsEsportsOutlined,
   SubscriptionsOutlined,
   ThumbUpOutlined,
   VideoLibraryOutlined,
+  WhatshotOutlined,
 } from '@mui/icons-material';
 import {
   Avatar,
@@ -24,6 +28,7 @@ import {
   ListItemButton,
   ListItemIcon,
   ListItemText,
+  ListSubheader,
   Toolbar,
   Typography,
 } from '@mui/material';
@@ -152,7 +157,8 @@ export const Sidebar = (props) => {
                 </ListItem>
               </List>
             </Collapse>
-            <SubsList drawerOpen={true} />
+            <SubscriptionList drawerOpen={true} />
+            <ExploreList drawerOpen={true} />
           </List>
         </Box>
       </Drawer>
@@ -160,7 +166,7 @@ export const Sidebar = (props) => {
   );
 };
 
-function SubsList({ drawerOpen }) {
+function SubscriptionList({ drawerOpen }) {
   const SubsChannels = [
     {
       name: 'Chris X',
@@ -197,11 +203,11 @@ function SubsList({ drawerOpen }) {
     <>
       <Divider />
       <List>
-        <ListItem>
+        <ListSubheader>
           <Typography sx={{ mb: 2, fontSize: '18px' }} variant='h6'>
             Subscriptions
           </Typography>
-        </ListItem>
+        </ListSubheader>
         {SubsChannels.map((value) => (
           <ListItem key={value.name} disablePadding>
             <ListItemButton>
@@ -215,6 +221,54 @@ function SubsList({ drawerOpen }) {
             </ListItemButton>
           </ListItem>
         ))}
+      </List>
+    </>
+  ) : null;
+}
+
+function ExploreList({ drawerOpen }) {
+  return drawerOpen == true ? (
+    <>
+      <Divider />
+      <List>
+        <ListSubheader>
+          <Typography sx={{ mb: 2, fontSize: '18px' }} variant='h6'>
+            Explore
+          </Typography>
+        </ListSubheader>
+        <ListItem disablePadding>
+          <ListItemButton>
+            <ListItemIcon>
+              <WhatshotOutlined sx={{ fontSize: '24px' }} />
+            </ListItemIcon>
+            <ListItemText primary='Trending' />
+          </ListItemButton>
+        </ListItem>
+
+        <ListItem disablePadding>
+          <ListItemButton>
+            <ListItemIcon>
+              <MusicNoteOutlined sx={{ fontSize: '24px' }} />
+            </ListItemIcon>
+            <ListItemText primary='Music' />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton>
+            <ListItemIcon>
+              <SportsEsportsOutlined sx={{ fontSize: '24px' }} />
+            </ListItemIcon>
+            <ListItemText primary='Gaming' />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton>
+            <ListItemIcon>
+              <EmojiEventsOutlined sx={{ fontSize: '24px' }} />
+            </ListItemIcon>
+            <ListItemText primary='Sports' />
+          </ListItemButton>
+        </ListItem>
       </List>
     </>
   ) : null;
