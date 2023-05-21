@@ -51,8 +51,8 @@ export const Sidebar = (props) => {
         onClose={toggleDrawer}
         elevation={2}
       >
-        <Box width={drawerWidth}>
-          <Toolbar />
+        <Toolbar />
+        <Box width={drawerWidth} sx={{ overflowX: 'scroll' }}>
           <List>
             <ListItem disablePadding>
               <ListItemButton>
