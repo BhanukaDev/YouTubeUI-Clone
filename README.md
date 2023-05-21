@@ -1,14 +1,16 @@
 # YouTubeUI-Clone
+![License](https://img.shields.io/badge/License-MIT-blue.svg) ![Version](https://img.shields.io/badge/Version-1.0.0-brightgreen.svg)
+
 This is a YouTube UI clone created using React and Material-UI (MUI). The project aims to provide a replica of the YouTube website's user interface, serving as a learning and understanding tool for React, Material-UI, and web development in general.
 
 ## Features
 
-* [ ] **Home Page**
-* [ ] **Search**
-* [x] **Sidebar**
-* [ ] **Video Player**
-* [ ] **Video Details**
-* [ ] **Responsive Design**
+* **Home Page** ![Progress](https://progress-bar.dev/50/?)
+* **Search** ![Progress](https://progress-bar.dev/60/?)
+* **Sidebar** ![Progress](https://progress-bar.dev/90/?)
+* **Video Player** ![Progress](https://progress-bar.dev/0/?)
+* **Video Details** ![Progress](https://progress-bar.dev/0/?)
+* **Responsive Design** ![Progress](https://progress-bar.dev/30/?)
 
 ## Technologies Used
 
@@ -27,24 +29,24 @@ To get a local copy of the project up and running, follow these steps:
 
 1. Clone the repository:
 ````
-2. git clone https://github.com/BhanukaDev/YouTubeUI-Clone.git
+git clone https://github.com/BhanukaDev/YouTubeUI-Clone.git
 ````
 
-3. Navigate to the project directory:
+2. Navigate to the project directory:
 ````
 cd YouTubeUI-Clone
 ````
 
-4. Install the dependencies:
+3. Install the dependencies:
 ````
 npm install
 ````
 
-5. Start the development server:
+4. Start the development server:
 ````
 npm run dev
 ````
-Open your web browser and [visit](http://localhost:3000) to see the application running.
+Open your web browser and visit http://localhost:3000 to see the application running.
 
 # Contributing
 
