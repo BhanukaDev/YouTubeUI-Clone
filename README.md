@@ -6,12 +6,15 @@ This is a YouTube UI clone created using React and Material-UI (MUI). The projec
 
 ## Features
 
-- **Home Page** ![Progress](https://progress-bar.dev/60/?)
-- **Search** ![Progress](https://progress-bar.dev/60/?)
-- **Sidebar** ![Progress](https://progress-bar.dev/100/?)
-- **Video Player** ![Progress](https://progress-bar.dev/0/?)
-- **Video Details** ![Progress](https://progress-bar.dev/0/?)
-- **Responsive Design** ![Progress](https://progress-bar.dev/30/?)
+| Component         | Progress                                                 |
+| ----------------- | -------------------------------------------------------- |
+| Home Page         | ![Progress](https://progress-bar.dev/60/?width=200)      |
+| Search            | ![Progress](https://progress-bar.dev/60/?width=200)      |
+| Sidebar           | ![Progress](https://progress-bar.dev/100/?width=200)     |
+| Video Player      | ![Progress](https://progress-bar.dev/0/?width=200)       |
+| Video Details     | ![Progress](https://progress-bar.dev/0/?width=200)       |
+| Responsive Design | ![Progress](https://progress-bar.dev/30/?width=200)      |
+
 
 ## Technologies Used
 
