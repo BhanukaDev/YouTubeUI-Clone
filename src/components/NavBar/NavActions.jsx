@@ -2,7 +2,7 @@ import {
   VideoCallOutlined,
   NotificationsNoneRounded,
 } from '@mui/icons-material';
-import { IconButton, Badge, Avatar, List } from '@mui/material';
+import { IconButton, Badge, Avatar, List, ListItem } from '@mui/material';
 import { CusToolTip } from '../CusTooltips';
 
 export const NavActions = () => {
@@ -11,27 +11,33 @@ export const NavActions = () => {
       <List
         sx={{
           display: 'flex',
-          gap: '15px',
+          width: '150px',
         }}
       >
-        <CusToolTip title='Create'>
-          <IconButton size='medium' sx={{ ml: 2 }}>
-            <VideoCallOutlined color='action' sx={{ fontSize: '24px' }} />
+        <ListItem disablePadding>
+          <CusToolTip title='Create'>
+            <IconButton>
+              <VideoCallOutlined color='action' sx={{ fontSize: '24px' }} />
+            </IconButton>
+          </CusToolTip>
+        </ListItem>
+        <ListItem disablePadding>
+          <CusToolTip title='Notifications'>
+            <IconButton>
+              <Badge badgeContent={5} overlap='circular' color='error'>
+                <NotificationsNoneRounded
+                  color='action'
+                  sx={{ fontSize: '24px' }}
+                />
+              </Badge>
+            </IconButton>
+          </CusToolTip>
+        </ListItem>
+        <ListItem disablePadding>
+          <IconButton>
+            <Avatar>Sh</Avatar>
           </IconButton>
-        </CusToolTip>
-        <CusToolTip title='Notifications'>
-          <IconButton size='medium'>
-            <Badge badgeContent={5} overlap='circular' color='error'>
-              <NotificationsNoneRounded
-                color='action'
-                sx={{ fontSize: '24px' }}
-              />
-            </Badge>
-          </IconButton>
-        </CusToolTip>
-        <IconButton size='small'>
-          <Avatar>Sh</Avatar>
-        </IconButton>
+        </ListItem>
       </List>
     </>
   );

@@ -8,7 +8,7 @@ This is a YouTube UI clone created using React and Material-UI (MUI). The projec
 
 - **Home Page** ![Progress](https://progress-bar.dev/60/?)
 - **Search** ![Progress](https://progress-bar.dev/60/?)
-- **Sidebar** ![Progress](https://progress-bar.dev/100/?)
+- **Sidebar** ![Progress](https://progress-bar.dev/90/?)
 - **Video Player** ![Progress](https://progress-bar.dev/0/?)
 - **Video Details** ![Progress](https://progress-bar.dev/0/?)
 - **Responsive Design** ![Progress](https://progress-bar.dev/30/?)

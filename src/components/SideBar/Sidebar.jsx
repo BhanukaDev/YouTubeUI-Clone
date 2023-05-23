@@ -5,9 +5,13 @@ import {
   EmojiEventsOutlined,
   ExpandLessOutlined,
   ExpandMoreOutlined,
+  FeedbackOutlined,
+  FlagOutlined,
+  HelpOutlineOutlined,
   HistoryOutlined,
   HomeOutlined,
   MusicNoteOutlined,
+  SettingsOutlined,
   SmartDisplayOutlined,
   SmartphoneOutlined,
   SportsEsportsOutlined,
@@ -159,6 +163,7 @@ export const Sidebar = (props) => {
             </Collapse>
             <SubscriptionList drawerOpen={true} />
             <ExploreList drawerOpen={true} />
+            <SettingsAndOther drawerOpen={true} />
           </List>
         </Box>
       </Drawer>
@@ -204,7 +209,7 @@ function SubscriptionList({ drawerOpen }) {
       <Divider />
       <List>
         <ListSubheader>
-          <Typography sx={{ mb: 2, fontSize: '18px' }} variant='h6'>
+          <Typography sx={{ fontSize: '16px', color: 'black' }} variant='h6'>
             Subscriptions
           </Typography>
         </ListSubheader>
@@ -232,7 +237,7 @@ function ExploreList({ drawerOpen }) {
       <Divider />
       <List>
         <ListSubheader>
-          <Typography sx={{ mb: 2, fontSize: '18px' }} variant='h6'>
+          <Typography sx={{ fontSize: '16px', color: 'black' }} variant='h6'>
             Explore
           </Typography>
         </ListSubheader>
@@ -267,6 +272,48 @@ function ExploreList({ drawerOpen }) {
               <EmojiEventsOutlined sx={{ fontSize: '24px' }} />
             </ListItemIcon>
             <ListItemText primary='Sports' />
+          </ListItemButton>
+        </ListItem>
+      </List>
+    </>
+  ) : null;
+}
+
+function SettingsAndOther({ drawerOpen }) {
+  return drawerOpen == true ? (
+    <>
+      <Divider />
+      <List>
+        <ListItem disablePadding>
+          <ListItemButton>
+            <ListItemIcon>
+              <SettingsOutlined sx={{ fontSize: '24px' }} />
+            </ListItemIcon>
+            <ListItemText primary='Settings' />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton>
+            <ListItemIcon>
+              <FlagOutlined sx={{ fontSize: '24px' }} />
+            </ListItemIcon>
+            <ListItemText primary='Report History' />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton>
+            <ListItemIcon>
+              <HelpOutlineOutlined sx={{ fontSize: '24px' }} />
+            </ListItemIcon>
+            <ListItemText primary='Help' />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton>
+            <ListItemIcon>
+              <FeedbackOutlined sx={{ fontSize: '24px' }} />
+            </ListItemIcon>
+            <ListItemText primary='Send feedback' />
           </ListItemButton>
         </ListItem>
       </List>
