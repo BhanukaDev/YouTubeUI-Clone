@@ -55,10 +55,10 @@ export const Sidebar = (props) => {
           width: `${drawerWidth}px`,
         }}
         anchor='left'
-        hideBackdrop={false}
+        hideBackdrop={true}
         open={open}
         onClose={toggleDrawer}
-        elevation={2}
+        elevation={0}
       >
         <Toolbar />
         <Box width={drawerWidth} sx={{ overflowX: 'scroll' }}>
@@ -209,7 +209,7 @@ function SubscriptionList({ drawerOpen }) {
       <Divider />
       <List>
         <ListSubheader>
-          <Typography sx={{ fontSize: '16px', color: 'black' }} variant='h6'>
+          <Typography sx={{ mb: 2, fontSize: '18px' }} variant='h6'>
             Subscriptions
           </Typography>
         </ListSubheader>
@@ -237,7 +237,7 @@ function ExploreList({ drawerOpen }) {
       <Divider />
       <List>
         <ListSubheader>
-          <Typography sx={{ fontSize: '16px', color: 'black' }} variant='h6'>
+          <Typography sx={{ mb: 2, fontSize: '18px' }} variant='h6'>
             Explore
           </Typography>
         </ListSubheader>

@@ -86,7 +86,7 @@ export const Navbar = (props) => {
             </IconButton>
           </CusToolTip>
         </Box>
-        <NavActions />
+        {/* <NavActions /> */}
       </Toolbar>
     </AppBar>
   );
