@@ -12,6 +12,7 @@ export const Mainbody = ({ draweropen, drawerWidth }) => {
         sx={{
           height: '92vh',
           overflowY: 'scroll',
+          overflowX: 'clip',
           transition: theme.transitions.create(['width', 'margin'], {
             easing: theme.transitions.easing.sharp,
             duration: theme.transitions.duration.leavingScreen,
